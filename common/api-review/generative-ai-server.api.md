@@ -348,6 +348,7 @@ export class GoogleAIFileManager {
     getFile(fileId: string, requestOptions?: SingleRequestOptions): Promise<FileMetadataResponse>;
     listFiles(listParams?: ListParams, requestOptions?: SingleRequestOptions): Promise<ListFilesResponse>;
     uploadFile(filePath: string, fileMetadata: FileMetadata): Promise<UploadFileResponse>;
+    uploadFileAsBuffer(file: ArrayBuffer, fileMetadata: FileMetadata): Promise<UploadFileResponse>;
 }
 
 // @public
